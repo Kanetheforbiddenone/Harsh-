@@ -48,3 +48,29 @@ yesBtn.addEventListener("click", () => {
     nextBtn.textContent = "Next ➜";
 
 });
+
+setInterval(()=>{
+
+    const heart=document.createElement("div");
+
+    heart.innerHTML="❤️";
+
+    heart.style.position="fixed";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.bottom="-20px";
+    heart.style.fontSize=(15+Math.random()*20)+"px";
+    heart.style.opacity=.8;
+    heart.style.transition="5s linear";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.style.bottom="110vh";
+        heart.style.opacity="0";
+    },50);
+
+    setTimeout(()=>{
+        heart.remove();
+    },5000);
+
+},500);
