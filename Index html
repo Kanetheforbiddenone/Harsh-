@@ -2,50 +2,41 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>For Harshu ❤️</title>
 
-<meta name="viewport"
-content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>For Harshu ❤️</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="background"></div>
+<div class="background"></div>
 
-<div class="glass-card">
+<div class="container">
 
-<h1 id="title">
-HELLO MERI JAANEMANN ❤️
-</h1>
+    <div class="card" id="card">
 
-<p id="subtitle">
-I made something just for you...
-</p>
+        <h1 id="title">
+            HELLO MERI JAANEMANN ❤️
+        </h1>
 
-<button id="openBtn">
-Open ❤️
-</button>
+        <p id="text">
+            I made something just for you...
+        </p>
+
+        <button id="nextBtn">
+            Tap Here ❤️
+        </button>
+
+    </div>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
