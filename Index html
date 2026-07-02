@@ -32,6 +32,14 @@
             Tap Here ❤️
         </button>
 
+        <div id="buttons" style="display:none; gap:20px; justify-content:center; margin-top:20px;">
+
+    <button id="yesBtn">YES ❤️</button>
+
+    <button id="noBtn">NO 🙈</button>
+
+</div>
+
     </div>
 
 </div>

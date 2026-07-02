@@ -19,10 +19,32 @@ nextBtn.addEventListener("click", () => {
             title.textContent = "Will you go out with me? 🥺";
             text.textContent = "I really hope your answer is yes.";
 
-            nextBtn.textContent = "YES ❤️";
+            nextBtn.style.display = "none";
 
+            document.getElementById("buttons").style.display = "flex";
             break;
-
     }
+
+});
+
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * 250 - 125;
+    const y = Math.random() * 180 - 90;
+
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+});
+
+yesBtn.addEventListener("click", () => {
+
+    title.textContent = "YAYYYYYY ❤️";
+    text.textContent = "I can't wait for our date 🥹";
+
+    document.getElementById("buttons").style.display = "none";
+
+    nextBtn.style.display = "inline-block";
+    nextBtn.textContent = "Next ➜";
 
 });
