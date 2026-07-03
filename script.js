@@ -19,6 +19,8 @@ nextBtn.addEventListener("click", () => {
             title.textContent = "Will you go out with me? 🥺";
             text.textContent = "I really hope your answer is yes.";
 
+            document.getElementById("catGif").style.display = "block";
+
             nextBtn.style.display = "none";
 
             document.getElementById("buttons").style.display = "flex";
@@ -40,12 +42,16 @@ noBtn.addEventListener("mouseover", () => {
 yesBtn.addEventListener("click", () => {
 
     title.textContent = "YAYYYYYY ❤️";
-    text.textContent = "I can't wait for our date 🥹";
 
-    document.getElementById("buttons").style.display = "none";
+text.textContent = "You just made me the happiest person 🥹";
 
-    nextBtn.style.display = "inline-block";
-    nextBtn.textContent = "Next ➜";
+document.getElementById("catGif").src =
+"https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif";
+
+nextBtn.style.display = "inline-block";
+nextBtn.textContent = "See our date ➜";
+
+document.getElementById("buttons").style.display = "none";
 
 });
 
