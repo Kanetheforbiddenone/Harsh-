@@ -25,6 +25,79 @@ nextBtn.addEventListener("click", () => {
 
             document.getElementById("buttons").style.display = "flex";
             break;
+
+            case 3:
+
+                    title.textContent = "OUR DATE PLAN 🍣";
+
+                        text.innerHTML = `
+                            🍣 Sushi<br><br>
+                                🍕 Pizza<br><br>
+                                    😂 Bokachoda
+                                        `;
+
+                                            document.getElementById("catGif").style.display = "none";
+
+                                                nextBtn.textContent = "Next ❤️";
+
+                                                    break;
+
+                                                    case 4:
+
+                                                            const days = [
+                                                                    "Saturday",
+                                                                            "Sunday",
+                                                                                    "Friday"
+                                                                                        ];
+
+                                                                                            const dates = [
+                                                                                                    "12 July",
+                                                                                                            "19 July",
+                                                                                                                    "26 July"
+                                                                                                                        ];
+
+                                                                                                                            const times = [
+                                                                                                                                    "5:00 PM",
+                                                                                                                                            "6:30 PM",
+                                                                                                                                                    "7:00 PM"
+                                                                                                                                                        ];
+
+                                                                                                                                                            const randomDay =
+                                                                                                                                                                    days[Math.floor(Math.random()*days.length)];
+
+                                                                                                                                                                        const randomDate =
+                                                                                                                                                                                dates[Math.floor(Math.random()*dates.length)];
+
+                                                                                                                                                                                    const randomTime =
+                                                                                                                                                                                            times[Math.floor(Math.random()*times.length)];
+
+                                                                                                                                                                                                title.textContent = "OUR DATE ❤️";
+
+                                                                                                                                                                                                    text.innerHTML = `
+                                                                                                                                                                                                            📅 ${randomDay}<br><br>
+                                                                                                                                                                                                                    🗓️ ${randomDate}<br><br>
+                                                                                                                                                                                                                            🕔 ${randomTime}
+                                                                                                                                                                                                                                `;
+
+                                                                                                                                                                                                                                    nextBtn.textContent = "One last thing ❤️";
+
+                                                                                                                                                                                                                                        break;
+
+                                                                                                                                                                                                                                        case 5:
+
+                                                                                                                                                                                                                                                title.textContent = "THANK YOU ❤️";
+
+                                                                                                                                                                                                                                                    text.innerHTML = `
+                                                                                                                                                                                                                                                        Thank you for saying yes.<br><br>
+
+                                                                                                                                                                                                                                                            I'm genuinely excited to spend time with you.<br><br>
+
+                                                                                                                                                                                                                                                                I hope this is the first of many amazing memories together. 🥹❤️
+                                                                                                                                                                                                                                                                    `;
+
+                                                                                                                                                                                                                                                                        nextBtn.style.display = "none";
+
+                                                                                                                                                                                                                                                                            break;
     }
 
 });
